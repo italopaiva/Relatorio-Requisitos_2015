@@ -5,4 +5,15 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Boehm e Turner 2004]{boehm}
+\abntrefinfo{Boehm e Turner}{BOEHM; TURNER}{2004}
+{BOEHM, B.; TURNER, R. \emph{Balancing Agility and Discipline: A Guide for the
+  perplexed}. 7. ed. [S.l.]: Addison Wesley, 2004.}
+
+\bibitem[BRASIL 1991]{brasil8255}
+\abntrefinfo{BRASIL}{BRASIL}{1991}
+{BRASIL. \emph{Lei nº 8255 de 20 de novembro de 1991}. 1991.
+Dispõe sobre a organização básica do Corpo de Bombeiros Militar do Distrito
+  Federal e dá outras providências.}
+
 \end{thebibliography}
