@@ -10,10 +10,23 @@
 {BOEHM, B.; TURNER, R. \emph{Balancing Agility and Discipline: A Guide for the
   perplexed}. 7. ed. [S.l.]: Addison Wesley, 2004.}
 
-\bibitem[BRASIL 1991]{brasil8255}
+\bibitem[BRASIL 1991]{brasil91}
 \abntrefinfo{BRASIL}{BRASIL}{1991}
 {BRASIL. \emph{Lei nº 8255 de 20 de novembro de 1991}. 1991.
 Dispõe sobre a organização básica do Corpo de Bombeiros Militar do Distrito
   Federal e dá outras providências.}
+
+\bibitem[BRASIL 2015]{brasil15}
+\abntrefinfo{BRASIL}{BRASIL}{2015}
+{BRASIL. \emph{Edital de licitação para contratação de prestação de
+  serviços de desenvolvimento e manutenção de software de sistemas de
+  informação para o Corpo de Bombeiros do Estado de São Paulo}. Secretária
+  de Estado dos Negócios da Segurança Pública, São Paulo: [s.n.], 2015.}
+
+\bibitem[Leffingwell 2011]{leffingwell11}
+\abntrefinfo{Leffingwell}{LEFFINGWELL}{2011}
+{LEFFINGWELL, D. \emph{Agile Software Requirements: Lean Requirements Practices
+  for Teams, Programs, and the Enterprise}. 5. ed. [S.l.]: Addison Wesley,
+  2011.}
 
 \end{thebibliography}
