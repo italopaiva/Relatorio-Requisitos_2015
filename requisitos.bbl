@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Beatty 2013]{beatty13}
+\abntrefinfo{Beatty}{BEATTY}{2013}
+{BEATTY, J. Winning the hidden battle: Requirements tool selection and
+  adoption.
+Seileven, Austin/Texas, 2013.}
+
 \bibitem[Boehm e Turner 2004]{boehm}
 \abntrefinfo{Boehm e Turner}{BOEHM; TURNER}{2004}
 {BOEHM, B.; TURNER, R. \emph{Balancing Agility and Discipline: A Guide for the
