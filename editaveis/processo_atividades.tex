@@ -1,9 +1,59 @@
   
   \subsection{Artefatos envolvidos}
   
-    Descrever o conceito dos artefatos envolvidos...
+    São listados abaixo os conceitos de alguns artefatos utilizados no processo, no contexto do projeto,
+    para o melhor entendimento das atividades do processo.
     
+    \begin{itemize}
+     
+     \item \textbf{Temas de Investimento} - Representa o conjunto de iniciativas que coordenam o portfólio da organização \cite{leffingwell11}.
+      Os épicos são derivados a partir de um Tema de Investimento.
+     
+     \item \textbf{Épicos} - São iniciativas de desenvolvimento em larga escala que agregam valor a um tema de investimento \cite{leffingwell11}.
+     São os artefatos de requisitos de mais alto nível no processo \cite{leffingwell11}.
+     São decompostos em \textit{features}.
+     
+     \item \textbf{\textit{Backlog} do Portfólio} - É o repositório dos épicos.
+     
+     \item \textbf{\textit{Features}} - São serviços fornecidos pelo sistema que atendem às necessidades dos
+     \textit{stakeholders} \cite{leffingwell03}. As \textit{features} atuam como pontes entre as necessidades
+     dos \textit{stakeholders} (requisitos de alto nível) e os requisitos específicos no domínio da solução \cite{leffingwell11}.
+     São decompostas em casos de uso.
+     
+     \item \textbf{Requisitos não-funcionais} - São qualidades do sistema, que caracterizam o comportamento do mesmo.
+      Serão armazenados no Documento de Visão do projeto e serão escritos baseado no modelo de Especificações Suplementares
+      fornecido por Leffingwell e Widrig (\citeyear{leffingwell03}).
+     
+     \item \textbf{\textit{Backlog} do Programa} - É o repositório das \textit{features} do sistema.
+     
+     \item \textbf{\textit{Roadmap}} - Consiste em um conjunto de \textit{releases} com datas planejadas, cada uma com um tema,
+     um conjunto de \textit{features} priorizadas e um conjunto de objetivos, demonstrando a intenção da empresa em mostrar valor ao
+     longo do tempo \cite{leffingwell11}.
+     
+     \item \textbf{Documento de Visão} - É um mecanismo para definir e comunicar a Visão do sistema \cite{leffingwell11}.
+      O conteúdo primário da Visão de um sistema é o conjunto de \textit{features} priorizadas que descrevem o que o sistema
+      será capaz de oferecer a seus usuários, para atender as necessidades dos envolvidos \cite{leffingwell11}.
+      O Documento de Visão do projeto armazenará também os requisitos não-funcionais e os termos técnicos identificados na
+      análise do negócio, entre outras informações importantes.
+ 
+     \item \textbf{Casos de Uso} - Um caso de uso captura um contrato sobre o comportamento de um sistema
+      entre os \textit{stakeholders} desse sistema \cite{cockburn01}.
+      Descreve o comportamento do sistema frente a várias condições, enquanto o sistema responde a
+      um pedido de um dos \textit{stakeholders} \cite{cockburn01}. Os casos de uso fornecem parte do insumo para a implementação.
+      
+     \item \textbf{Modelo de Casos de Uso} - É o conjunto completo dos casos de uso, atores, e suas interações com o sistema \cite{leffingwell03}.
+     
+     \item \textbf{\textit{Backlog} do Time} - É o repositório dos casos de uso que serão desenvolvidos em uma \textit{release}.
+     
+     \item \textbf{\textit{Backlog} da Sprint} - É o repositório dos casos de uso que serão desenvolvidos em uma \textit{sprint}.
+     
+     \item \textbf{\textit{Build}} - É o incremento de \textit{software} que é gerado em cada \textit{sprint}.
+     
+    \end{itemize}
+
   \subsection{Atividades e seus artefatos}
+    
+    A seguir são descritas as atividades e os artefatos envolvidos no processo em cada nível do SAFe, Portfólio, Programa e Time.
     
     \input{editaveis/processo_atividades_portifolio}
     
