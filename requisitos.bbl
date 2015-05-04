@@ -34,10 +34,22 @@ Dispõe sobre a organização básica do Corpo de Bombeiros Militar do Distrito
 {COCKBURN, A. \emph{Writing Effective Use Cases}. 3. ed. [S.l.]: Addison
   Wesley, 2001.}
 
+\bibitem[Davis 1993]{davis93}
+\abntrefinfo{Davis}{DAVIS}{1993}
+{DAVIS, A.~M. \emph{Software requirements: objects, functions and states}. New
+  Jersey: Prentice–Hall: [s.n.], 1993.}
+
 \bibitem[Gause e Weinberg 1989]{gause89}
 \abntrefinfo{Gause e Weinberg}{GAUSE; WEINBERG}{1989}
 {GAUSE, D.; WEINBERG, G. \emph{Exploring Requirements: Quality Before Design}.
   [S.l.]: Dorset House Publishing, 1989.}
+
+\bibitem[Genvigir 2009]{genvigir09}
+\abntrefinfo{Genvigir}{GENVIGIR}{2009}
+{GENVIGIR, E.~C. Um modelo para rastreabilidade de requisitos de software
+  baseado em generalização de elos e atributos.
+São José dos Campos, 2009.
+[Online; accessed 03-May-2015].}
 
 \bibitem[Hoffmann et al. 2003]{hoffmann03}
 \abntrefinfo{Hoffmann et al.}{HOFFMANN et al.}{2003}
@@ -59,5 +71,16 @@ IEEE Computer Society, 2003.}
 \abntrefinfo{Leffingwell e Widrig}{LEFFINGWELL; WIDRIG}{2003}
 {LEFFINGWELL, D.; WIDRIG, D. \emph{Managing Software Requirements: A Use Case
   Approach}. 2. ed. [S.l.]: Addison Wesley, 2003.}
+
+\bibitem[Ramesh e Jarke 2001]{ramesh01}
+\abntrefinfo{Ramesh e Jarke}{RAMESH; JARKE}{2001}
+{RAMESH, B.; JARKE, M. \emph{Toward reference models for requirements
+  traceability. IEEE Transactions on Software Engineering}. 27. ed. [S.l.:
+  s.n.], 2001.}
+
+\bibitem[Sayão e Leite 2005]{sayao05}
+\abntrefinfo{Sayão e Leite}{SAYãO; LEITE}{2005}
+{SAYãO, M.; LEITE, J. C. S.~P. Rastreabilidade de requisitos.
+DI/PUC-Rio, 2005.}
 
 \end{thebibliography}
