@@ -30,6 +30,7 @@
 \backcite {brasil15}{{18}{3.2.4}{subsection.3.2.4}}
 \backcite {boehm}{{18}{3.2.4}{subsection.3.2.4}}
 \backcite {leffingwell11}{{19}{4}{chapter.4}}
+\backcite {leffingwell11}{{19}{4}{chapter.4}}
 \backcite {leffingwell11}{{24}{4.3.1}{subsection.4.3.1}}
 \backcite {leffingwell11}{{24}{4.3.1}{subsection.4.3.1}}
 \backcite {leffingwell11}{{24}{4.3.1}{subsection.4.3.1}}
@@ -42,7 +43,12 @@
 \backcite {cockburn01}{{25}{4.3.1}{subsection.4.3.1}}
 \backcite {cockburn01}{{25}{4.3.1}{subsection.4.3.1}}
 \backcite {leffingwell03}{{25}{4.3.1}{subsection.4.3.1}}
-\backcite {beatty13}{{35}{6.3}{section.6.3}}
-\backcite {hoffmann03}{{37}{6.3.2}{subsection.6.3.2}}
-\backcite {beatty13}{{37}{6.3.2}{subsection.6.3.2}}
-\backcite {hoffmann03}{{37}{6.3.2}{subsection.6.3.2}}
+\backcite {softex12}{{33}{4.4.1}{subsection.4.4.1}}
+\backcite {softex12}{{33}{4.4.1}{subsection.4.4.1}}
+\backcite {softex12}{{33}{4.4.1}{subsection.4.4.1}}
+\backcite {softex12}{{33}{4.4.1}{subsection.4.4.1}}
+\backcite {softex12}{{33}{4.4.1}{subsection.4.4.1}}
+\backcite {beatty13}{{39}{6.3}{section.6.3}}
+\backcite {hoffmann03}{{41}{6.3.2}{subsection.6.3.2}}
+\backcite {beatty13}{{41}{6.3.2}{subsection.6.3.2}}
+\backcite {hoffmann03}{{41}{6.3.2}{subsection.6.3.2}}
