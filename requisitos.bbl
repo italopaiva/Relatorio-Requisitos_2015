@@ -34,6 +34,11 @@ Dispõe sobre a organização básica do Corpo de Bombeiros Militar do Distrito
 {COCKBURN, A. \emph{Writing Effective Use Cases}. 3. ed. [S.l.]: Addison
   Wesley, 2001.}
 
+\bibitem[Gause e Weinberg 1989]{gause89}
+\abntrefinfo{Gause e Weinberg}{GAUSE; WEINBERG}{1989}
+{GAUSE, D.; WEINBERG, G. \emph{Exploring Requirements: Quality Before Design}.
+  [S.l.]: Dorset House Publishing, 1989.}
+
 \bibitem[Hoffmann et al. 2003]{hoffmann03}
 \abntrefinfo{Hoffmann et al.}{HOFFMANN et al.}{2003}
 {HOFFMANN, M. et al. Requirements for requirements management tools.
@@ -44,6 +49,11 @@ IEEE Computer Society, 2003.}
 {LEFFINGWELL, D. \emph{Agile Software Requirements: Lean Requirements Practices
   for Teams, Programs, and the Enterprise}. 5. ed. [S.l.]: Addison Wesley,
   2011.}
+
+\bibitem[Leffingwell e Widrig 1999]{leffingwell99}
+\abntrefinfo{Leffingwell e Widrig}{LEFFINGWELL; WIDRIG}{1999}
+{LEFFINGWELL, D.; WIDRIG, D. \emph{Managing Software Requirements: A Unified
+  Approach}. 1. ed. [S.l.]: Addison Wesley, 1999.}
 
 \bibitem[Leffingwell e Widrig 2003]{leffingwell03}
 \abntrefinfo{Leffingwell e Widrig}{LEFFINGWELL; WIDRIG}{2003}
