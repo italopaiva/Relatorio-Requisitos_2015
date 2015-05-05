@@ -2,12 +2,135 @@
 
   \section{Atributos de requisitos}
   
+    Os atributos de requisitos são as propriedades de um requisito. 
+    Eles capturam informações importante que são utilizadas para uma melhor gerência dos requisitos e do projeto.
+    
+    Os atributos definidos para o projeto, visando um melhor gerenciamento dos requisitos, foram:
+    
+    \begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=0.5]{editaveis/figuras/requirements_atributes}
+      \caption[Atributos de requisitos do projeto] {Atributos de requisitos do projeto. \footnotemark}
+      \label{requirements_atributes}
+    \end{figure}
+    
+    A seguir são descritos os valores que podem ser assumidos por cada atributo:
+    \textbf{Status:}
+    \begin{itemize}
+     \item \textbf{Completo/Realizado}: Indica que o requisito em questão foi realizado e implementado no sistema; 
+     \item \textbf{Em Progresso}: Indica que o requisito em questão está em processo de implementação dentro do sistema;
+     \item \textbf{Não Iniciado}: Indica que o requisito em questão foi submetido ao seu respectivo \textit{Backlog}, porém não foi iniciado o seu processo de implementação.
+    \end{itemize}
+    \textbf{Prioridade:}
+    \begin{itemize}
+     \item \textbf{Alta}: Indica que o requisito em questão é de suma importância para os \textit{stakeholders}, agregando grande valor aos usuários;
+     \item \textbf{Média}: Indica que o requisito em questão possui relativa importância para os \textit{stakeholders}, podendo ser implementado quando for de interesse do cliente.
+     \item \textbf{Baixa}: Indica que o requisito em questão possui pequena importância para os \textit{stakeholders}, representando uma funcionalidade opcional do sistema.
+    \end{itemize}
+    \textbf{Complexidade:}
+    \begin{itemize}
+     \item \textbf{Alta}: Indica que o requisito em questão possui alto nível de dificuldade, exigindo um grande nível de esforço para sua implementação;
+     \item \textbf{Média}: Indica que o requisito em questão possui um relativo nível de dificuldade, exigindo um nível de esforço moderado para sua implementação;
+     \item \textbf{Baixa}: Indica que o requisito em questão possui um baixo nível de dificuldade, exigindo um baixo nível de esforço para sua implementação.
+    \end{itemize}
+  
+    Exemplo de matriz de atributos de requisitos:
+    \begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=0.5]{editaveis/figuras/example_atributes}
+      \caption[Exemplo do uso dos atributos de requisitos.] {Exemplo do uso dos atributos de requisitos.. \footnotemark}
+      \label{example_atributes}
+    \end{figure}
+  
+  
   \section{Estratégia de rastreabilidade}
   
-    \subsection{Rastreabilidade vertical}
-    
-    \subsection{Rastreabilidade horizontal}
-    
+    A rastreabilidade de requisitos é importante para prover relacionamentos entre requisitos, 
+    arquitetura e implementação final do sistema de software, 
+    possibilitando uma compreensão dos relacionamentos de dependência entre 
+    requisitos e entre os requisitos e artefatos do sistema \cite{sayao05}.
+  
+    A rastreabilidade pode ser implementada através de um conjunto,
+    dos chamados, elos de rastreabilidade entre requisitos inter-relacionados, 
+    entre requisitos e suas fontes e entre requisitos e os componentes do sistema, 
+    de acordo com Sayão e Leite (\citeyear{sayao05}).
+  
+    O elo é o principal recurso utilizado para manter e representar os relacionamentos da rastreabilidade. 
+    Um elo é estabelecido entre um artefato origem e um artefato destino \cite{genvigir09}.
+  
+    \begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=1]{editaveis/figuras/elo}
+      \caption[Elementos básicos de um elo.] {Elementos básicos de um elo. \footnotemark}
+      \label{elo}
+    \end{figure}
+    \footnotetext{Fonte: \cite{genvigir09}}
+  
+    De acordo com Genvigir (\citeyear{genvigir09}), 
+    informações sobre a origem e o destino são suficientes para garantir a rastreabilidade para frente e para trás.
+  
+    Sayão e Leite (\citeyear{sayao05}), apresentam alguns tipos de elos de rastreabilidade 
+    propostos em dois meta-modelos de rastreabilidade, 
+    o Meta-modelo de Ramesh e Jarke e o de Toranzo.
+
+    Ramesh e Jarke (\citeyear{ramesh01}), acreditam que os elos de rastreabilidade podem ser agrupados em duas categorias básicas:
+    \begin{itemize}
+      \item \textbf{Relacionados ao produto}: elos que descrevem propriedades e relacionamentos dos objetos. Sendo esses elos de satisfação e dependência.
+      \item \textbf{Relacionados ao processo}: elos relacionados ao histórico de ações executadas no próprio processo. Sendo eles, elos de evolução  e elos de \textit{rationale} (indica as razões ou motivações para uma determinada ação).
+    \end{itemize}
+
+    Para a utilização na disciplina e no contexto desse relatório, 
+    serão contemplados nesse trabalho, apenas, elos de rastreabilidade relacionados ao produto, 
+    mais precisamente, os elos de dependência. Que segundo Ramesh e Jarke (\citeyear{ramesh01}), são definidos como:
+
+    \begin{quote}
+      Elos de dependência têm por propósito apoiar o gerenciamento de dependências entre objetos, 
+      freqüentemente impostas por restrições de recurso, de competência ou de compatibilidade, 
+      sendo úteis para registrar a composição e hierarquia dos objetos e apoiar o gerenciamento do impacto das 
+      alterações num objeto sobre os objetos que dele dependem. \cite{ramesh01}
+    \end{quote}
+  
+    Destacando que objetos são definidos por Ramesh e Jarke (\citeyear{ramesh01}) como sendo objetos conceituais 
+    relacionados ao produto, como por exemplo requisitos, ou artefatos gerados no processo de desenvolvimento.
+
+    Levando em consideração os  conceitos, definições e limitações supracitados, a estratégia de rastreabilidade de 
+    requisitos para nosso contexto seguirá a hierarquia representada visualmente na figura a seguir:
+  
+    \begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=0.7]{editaveis/figuras/traceability}
+      \caption[Diagrama - Estratégia de Rastreabilidade de Requisitos.] {Diagrama - Estratégia de Rastreabilidade de Requisitos. \footnotemark}
+      \label{traceability}
+    \end{figure}
+ 
+    Os requisitos serão rastreados a partir do nível de portfólio, 
+    através dos temas de investimento e épicos, e passarão pelos níveis de programa e time, 
+    através das \textit{features} e casos de uso, respectivamente. Dessa forma, os requisitos serão rastreados para frente, 
+    que segundo Davis (\citeyear{davis93}), é a capacidade de rastrear um requisito até seus refinamentos, 
+    e para trás, que é a de rastrear um refinamento até sua origem.
+  
+    Para um maior controle e um melhor gerenciamento dos requisitos, 
+    os mesmos serão identificados de acordo com a tabela a seguir:
+  
+    \begin{figure}[!htbp]
+      \centering
+      \includegraphics[scale=0.7]{editaveis/figuras/identificadores_requisitos}
+      \caption[Identificadores dos requisitos]{Identificadores dos requisitos. \footnotemark}
+      \label{identificadores_requisitos}
+    \end{figure}
+  
+    Os requisitos serão nomeados a partir dos identificadores e, também, de acordo com sua fonte, ou seja, 
+    o nome de um requisito será composto por:
+  
+    \begin{itemize}
+      \item No caso de um \textbf{Tema de Investimento}: T (codigo tema investimento) Exemplo: T01.
+      \item No caso de um \textbf{Épico}: T (codigo tema investimento) + E (codigo epico) Exemplo: T01E01.
+      \item No caso de uma \textbf{Feature}: E (codigo epico) + F (codigo feature) Exemplo: E01F01.
+      \item No caso de um \textbf{Caso de Uso}:  F (codigo feature) + UC (codigo caso uso) Exemplo: F01UC01.
+    \end{itemize}
+
+    Dessa forma, garantiremos a rastreabilidade para frente e para trás dos requisitos.
+  
   \section{Ferramentas de gestão de requisitos}
     
     De acordo com Beatty (\citeyear{beatty13}), uma ferramenta de gerenciamento de requisitos deve oferecer
