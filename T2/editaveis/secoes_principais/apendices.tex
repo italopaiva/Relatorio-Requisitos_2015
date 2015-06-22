@@ -1,4 +1,4 @@
-\begin{apendicesenv}
+vb\begin{apendicesenv}
   
   \chapter{Processo de Engenharia de Requisitos}
   
@@ -27,7 +27,7 @@
 	\hline
 	Data & Revisão & Descrição & Autor \\ \hline
 	14/06/2015 & 1.0 & Versão Inicial & João Paulo \\ \hline
-	     &         &           &       \\ \hline
+	22/06/2015 & 1.1 & Adição dos RNF & João Paulo \\ \hline
 	     &         &           &       \\ \hline
 	\end{tabular}
 	\caption{Histórico de Revisões}
@@ -38,17 +38,18 @@
 Este documento define as estratégias utilizadas para nortear o desenvolvimento do projeto, as necessidades do usuário e envolvidos no projeto,
 		\subsection{Resumo da solução}
 A solução se apresenta sob a forma de uma aplicação que funcionará na intranet do Corpo de Bombeiros Militar do Distrito Federal, e fornecerá subsídios para o correto gerenciamento das viaturas e pessoal relacionado à esse contexto. A aplicação será desenvolvida a partir das necessidades do cliente, sem conexão com um sistema legado.
-		\subsection{Referências}
-Adicionar Referências
 	\section{Descrição do Usuário}
-		\subsection{\textit{User Personas}}
-Definir User Personas?
 		\subsection{Ambiente de Usuário}
-Os usuários são funcionários do Corpo de Bombeiros Militar do Distrito Federal e utilizarão o sistema nos batalhões e Unidades.
+Os usuários são funcionários do Corpo de Bombeiros Militar do Distrito Federal e utilizarão o sistema nas Unidades.
 		\subsection{Principais necessidades do Usuário}
-Para o usuário é primordial organizar e automatizar a gestão do contexto de viaturas e motoristas, desde o Departamento de Gestão Veicular até o controle de viaturas e motoristas nas unidades.
+Para o usuário é primordial organizar e automatizar a gestão de viaturas e motoristas, desde o Departamento de Gestão Veicular até o controle de viaturas e motoristas nas unidades.
 	\section{\textit{Stakeholders}}
-Definir Stakeholders?
+Os envolvidos no projeto seja no desenvolvimento, na aquisição ou no uso da aplicação final são stakeholders. No contexto de desenvolvimento do sistema de gestão de viaturas do CBM-DF temos os seguintes \textit{stakeholders}:
+\begin{itemize}
+ \item Equipe de desenvolvimento;
+ \item Bombeiros do CBM-DF;
+ \item Funcionários do DGV;
+\end{itemize}
 	\section{Resumo do Produto}
 Nesta seção serão definidas características do produto.
 		\subsection{Perspectiva do Produto}
@@ -57,42 +58,29 @@ Espera-se do produto que melhore a gestão de viaturas e motoristas no CBM-DF, f
 O sistema de gerenciamento automatizará as atividades que hoje são feitas à mão e são arquivadas sob forma de planilhas eletrônicas. Os usuários do DGV e Unidades utilizarão o sistema afim de automatizar suas atividades.
 		\subsection{Resumo das Capacidades}
 O sistema de Gerenciamento de Viaturas e Motoristas do CBM-DF permitirá o gerenciamento de viaturas, criando viaturas nos sistemas, alocando viaturas às unidades e modificando os estados das viaturas. Também serão gerenciados os motoristas, adicionando os mesmo no sistema, modificando dados do motorista, alocando motoristas em escalas e em viaturas.
-		\subsection{Suposições e Dependências}
-A
-		\subsection{Preços e Custos}
-A
-	\section{\textit{Features} do Produto}
-A
-		\subsection{Feature 1}
-A
-		\subsection{Feature 2}
-A
-		\subsection{Feature 3}
-A
-	\section{Exemplos de Caso de uso}
-A
+	\section{Funcionalidades do Produto}
+As funcionalidades são um conjunto de características e comportamentos que o sistema deve conter para resolver o problema e as necessidades do cliente.
+		\subsection{\textit{Feature} 1: Gerenciamento das missões das unidades}
+Esta funcionalidade compreenderá comportamentos que permitirão ao usuário fazer gerenciamento de missões atribuindo viaturas a elas e gerar relatórios do trabalho registrado no sistema.
+		\subsection{\textit{Feature} 2: Gerenciamento dos dados de abastecimento das viaturas}
+Esta funcionalidade facilitará o gerenciamento dos abastecimentos, visto que o usuário, propriamente dotado de autorização, poderá inserir dados de um abastecimento juntamente com o recibo do próprio. Além disso a funcionalidade garante a geração de relatórios dos dados aqui contidos.
+		\subsection{\textit{Feature} 3: Gerenciamento dos motoristas das unidades}
+Esta funcionalidade será empregada tanto para o DGV quanto para as Unidades, com a finalidade de gerenciar o motorista desde o cadastro do próprio no sistema quanto na alocação em uma escala e missões, além de compreender a geração de relatórios desse assunto.
+		\subsection{\textit{Feature} 4: Gerenciamento das viaturas do CBM-DF}
+Esta funcionalidade compreende as necessidades do usuário de gerenciar viaturas desde o cadastro e alocação, até o desígnio para as missões. Aterações de estado e geração de relatórios deste assunto estão aqui contidos.
 	\section{Requisitos não-funcionais}		
-A
-		\subsection{RNF 1}
-A
-		\subsection{RNF 2}
-A
-		\subsection{RNF 3}
-A
-			\subsubsection{Padrões de aplicação}
-A
-			\subsubsection{Licença, segurança e aplicação}
-A
+Requisitos não-funcionais são regras que não necessariamente são funcionalidades do sistema, mas o sistema deve estar em conformidade com 
+\begin{itemize}
+ \item O sistema deve ficar online 24/7;
+ \item O sistema deve estar disponível na Intranet do CBMDF;
+ \item O sistema deve possuir uma interface autoexplicativa;
+ \item O sistema deve fornecer informações mais detalhadas sobre o funcionamento de suas funcionalidades, quando necessário;
+ \item O sistema deve possuir uma versão mobile, com determinadas funcionalidades, na plataforma Android;
+ \item O sistema deve manter uma cópia local e atualizada de determinados dados, em sua versão mobile, provenientes do banco de dados do sistema;
+ \item O sistema deve, em sua versão mobile, enviar todas as alterações feitas enquanto offline, para o banco de dados principal assim que se conectar a Internet;
+ \item O sistema deve exigir uma verificação de identidade para que o acesso seja liberado.
+\end{itemize}
 	\section{Documentação dos Requisitos}
-A
-		\subsection{Manual do Usuário}
-A
-		\subsection{Ajuda Online}
-A
-		\subsection{Guia de instalação, configuração e arquivo \textit{ReadMe}}
-A
-		\subsection{Rotulagem dos requisitos e Empacotamentos}
-A
 		\subsection{Glossário}
 Neste item definimos termos a fim de tornar comum o entendimento dos envolvidos.
 \begin{itemize}
@@ -101,9 +89,5 @@ Neste item definimos termos a fim de tornar comum o entendimento dos envolvidos.
  \item DGV: Departamento de Gestão Veicular.
  \item Chamado: Demanda criada por uma ligação de telefone e passada pela central para alguma unidade.
  \item Missão: Atividade dos bombeiros das unidades.
-
 \end{itemize}
-
-
-
 \end{apendicesenv}
