@@ -1,0 +1,85 @@
+  \subsection{Caso de Uso F1UC2 - Alterar Missão}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+  
+    Este caso de uso permite ao Sargento alterar os dados de uma missão previamente cadastrada no sistema de gerenciamento de viaturas do CBMDF.
+
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+    Sargento. O Sargento é a patente responsável pela Gestão Operacional da corporação do Corpo de Bombeiros do Distrito Federal (CBMDF).
+  
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Sargento escolhe a opção de alteração de dados da missão.
+    
+  \begin{enumerate}
+  \item O sistema solicita ao Sargento que informe a missão que deseja-se ter os dados alterados.
+  \item O Sargento informa os dados da missão pelos quais deseja fazer a pesquisa e solicita a consulta. [PE01]
+  \item O sistema apresenta os dados da missão solicitada e permite a edição.[RN01]
+  \item O Sargento realiza as mudanças necessárias e solicita a alteração.
+  \item O sistema faz a validação dos dados preenchidos.  [FE01]
+  \item O sistema apresenta os dados informados para confirmação da alteração.
+  \item O Sargento confirma a alteração dos dados da missão.
+  \item O sistema altera os dados da missão.
+  \item O sistema apresenta uma mensagem de confirmação da alteração.
+  \item O caso de uso é encerrado.
+  \end{enumerate}
+  
+  \pagebreak
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} – Dados que podem ser alterados.
+   
+   A Tabela a seguir apresenta os dados da missão que podem ser alterados.
+   
+   \begin{table*}[!h]
+    \centering
+      \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.20\linewidth}|p{0.20\linewidth}|}
+      \hline
+      Campo  & Formato & Valores & Obrigatoriedade\\
+      \hline
+
+      \textit{Status} da missão & - & Em andamento, finalizada & Sim\\\hline
+      
+      Descrição & - & - & Sim\\\hline
+      
+      \hline
+      \end{tabular}
+    \end{table*}
+
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+   
+   FE01. Validação de dados
+	No passo 5 do fluxo principal, é verificado pelo sistema que um ou mais campos não foram validados (no formato e/ou
+	obrigatoriedade de preenchimento). O sistema exibe uma mensagem informando o ocorrido ao Gestor Administrativo e retorna
+	ao passo 1 do fluxo principal.
+
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Sargento afim de realizar o cadastro da missão deve estar devidamente autenticado no sistema para a execução do caso de uso.
+
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+   
+   \textbf{Ponto de extensão}
+   
+   PE01. Incluir o caso de uso: Consultar missão.
+   No passo 2 do fluxo principal, o caso de uso F1UC3 - Consultar missão deve ser executado.
