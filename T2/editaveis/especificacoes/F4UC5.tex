@@ -1,0 +1,101 @@
+
+  \subsection{Caso de Uso F4UC5 - Cadastrar motorista}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+    Este caso de uso permite que o Gestor Administrativo cadastre um motorista na corporação do Corpo de Bombeiros do Distrito Federal
+    (CBMDF) para manter o registro deste no sistema.
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+    Gestor Administrativo. O Gestor Administrativo representa os Tenentes e Capitães da corporação do Corpo de Bombeiros do Distrito
+    Federal (CBMDF).
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Gestor Administrativo escolhe a opção de cadastrar um motorista na corporação.
+    
+  
+  \begin{enumerate}
+    \item O sistema solicita ao Gestor Administrativo o preenchimento dos dados de um motorista.
+    \item O Gestor Administrativo preenche os dados e solicita a confirmação de cadastro.
+    \item O sistema faz a validação dos dados preenchidos.[RN01][FE01]
+    \item O sistema apresenta os dados informados para confirmação do cadastro.
+    \item O Gestor Administrativo confirma a inclusão do motorista.
+    \item O sistema cadastra o motorista informado.
+    \item O sistema apresenta uma mensagem de confirmação do cadastro.
+    \item O caso de uso é encerrado.
+    
+  \end{enumerate}
+  
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} – Validação das informações.
+   
+   A Tabela a seguir apresenta os dados do motorista que devem ser validados.
+   
+   \begin{table*}[!h]
+    \centering
+      \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.20\linewidth}|p{0.20\linewidth}|}
+      \hline
+      Campo  & Formato & Valores & Obrigatoriedade\\
+      \hline
+
+      Matrícula do motorista & 000000/0 & - & Sim\\ \hline
+
+      Patente do motorista & - & - & Sim\\\hline
+      
+      Curso de especialização & - & - & Sim\\\hline
+      
+      Curso de especialização & - & - & Sim\\\hline
+      
+      Ano do curso de especialização & 0000 & - & Sim\\\hline
+      
+      Número da CNH & - & - & Sim\\\hline
+      
+      Número da CNH & - & A, B, C, D e E & Sim\\\hline
+      
+      Data de Vencimento da CNH & 00/00/0000 & - & Sim\\\hline
+      
+      \hline
+      \end{tabular}
+    \end{table*}
+
+    \pagebreak
+    
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+   
+   FE01. Validação de dados
+	No passo 3 do fluxo principal, é verificado pelo sistema que um ou mais campos não foram validados (no formato e/ou
+	obrigatoriedade de preenchimento). O sistema exibe uma mensagem informando o ocorrido ao Gestor Administrativo e retorna
+	ao passo 1 do fluxo principal.
+
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Gestor Administrativo deve estar corretamente autenticado no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+
+
+
+
+  
