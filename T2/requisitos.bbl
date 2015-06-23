@@ -5,4 +5,16 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.2 }
 
+\bibitem[Leffingwell 2011]{leffingwell11}
+\abntrefinfo{Leffingwell}{LEFFINGWELL}{2011}
+{LEFFINGWELL, D. \emph{Agile Software Requirements: Lean Requirements Practices
+  for Teams, Programs, and the Enterprise}. 5. ed. [S.l.]: Addison Wesley,
+  2011.}
+
+\bibitem[Lenffingwell 2014]{leffingwell14}
+\abntrefinfo{Lenffingwell}{LENFFINGWELL}{2014}
+{LENFFINGWELL, D. \emph{Scaled Agile Framework 3.0}. 2014.
+Disponível em: <http://www.scaledagileframework.com>. Acesso em: 19 de junho
+  de 2015.}
+
 \end{thebibliography}
