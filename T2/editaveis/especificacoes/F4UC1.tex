@@ -1,0 +1,149 @@
+
+  \section{Caso de Uso F4UC1 - Cadastrar viatura}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+Este caso de uso permite que o Gestor Administrativo cadastre uma viatura para  o Corpo de Bombeiros do 
+Distrito Federal (CBMDF)  para manter o registro desta no sistema. 
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+    Gestor Administrativo. O Gestor Administrativo representa os Tenentes e Capitães da corporação do Corpo de Bombeiros do Distrito
+    Federal (CBMDF).
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+Este caso de uso é iniciado quando o Gestor administrativo escolhe a ação de cadastrar viatura.    
+  
+  \begin{enumerate}
+
+ \item O sistema solicita ao Gestor Administrativo o preenchimento dos dados;
+ \item O Gestor Administrativo fornece todos os dados e confirma o cadastro. [FE01]
+ \item O sistema solicita confirmação acerca dos dados a serem cadastrados; [RN01][RN02]
+ \item O Gestor Administrativo confirma a solicitação de cadastro; [FE02]
+ \item O sistema realiza o cadastro dos dados informados;
+ \item O sistema exibe uma mensagem confirmando o cadastro bem sucedido da viatura;
+ \item O caso de uso é concluído.
+    
+  \end{enumerate}
+  
+  \vfill
+  \pagebreak
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} – Atributos de Viatura.
+   
+ A tabela a seguir apresenta os atributos que deverão estar presentes em todas as viaturas.
+ 
+   \begin{table*}[!h]
+    \centering
+      \begin{tabular}{|p{0.20\linewidth}|p{0.4\linewidth}|p{0.20\linewidth}|p{0.20\linewidth}|}
+      \hline
+      Campo  & Formato & Valores & Obrigatoriedade\\
+      \hline
+
+        Número de identificação & AAA000 & - & Sim\\
+
+  \hline                               
+  Unidade de operação & - & - & Sim\\
+
+  \hline                               
+  Status & - & Em manutenção, ativa e desativada & Sim\\
+  
+  \hline                               
+  Tipo de viatura & - & - & Sim\\
+  
+  \hline                               
+  Tipo de combustível & - & Álcool, Diesel e Gasolina & Sim\\
+  
+  \hline                               
+  Marca do veículo & - & - & Sim\\
+  
+  \hline                               
+  Modelo do veículo & - & - & Sim\\
+  
+  \hline                               
+  Placa & AAA-0000 & - & Não\\
+  
+  \hline                               
+  Chassi & AA.AA.AAAAA.A.A.AAAAAA & - & Não\\
+  
+  \hline                               
+  Responsável & - & - & Sim\\  
+  
+  \hline  
+      
+      \end{tabular}
+    \end{table*}
+
+    
+  \textbf{RN02} – Tipos de viatura.
+   
+ A tabela a seguir apresenta os tipos de veículos presentes no CBMDF e os valores que podem assumir.
+ 
+   \begin{table*}[!h]
+    \centering
+      \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|}
+      \hline
+      Tipo & Valores\\
+    
+  \hline                               
+  Terreste & Caminhão, carro de passeio e motocicleta\\
+
+  \hline                               
+  Aquático & Barco e Jetski\\
+
+  \hline                               
+  Aéreo & Helicóptero\\
+  
+  \hline     
+        
+      \end{tabular}
+    \end{table*}
+
+    
+    
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+   
+   FE01. Validação de dados
+	 No passo 2 do fluxo principal, se um ou mais campos não forem validados (no formato e/ou obrigatoriedade 
+ de preenchimento) o sistema exibe uma mensagem informando o ocorrido ao Gestor Administrativo. Retorna ao 
+ primeiro passo do fluxo principal.
+
+    FE02. Informações fornecidas incorretas
+     No passo 4 do fluxo principal, se alguma solicitação não for confirmada pelo Gestor Administrativo, o sistema 
+ cancela a operação. Retorna ao passo 2 do fluxo principal.
+
+ \vfill
+ \pagebreak
+
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Gestor Administrativo deve estar corretamente autenticado no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+  
+  \vfill
+  \pagebreak
+
+
+   
