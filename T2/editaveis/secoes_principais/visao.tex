@@ -22,16 +22,21 @@
   
 	\section{Introdução}
 		\subsection{Propósito}
-Este documento define as estratégias utilizadas para nortear o desenvolvimento do projeto, as necessidades do usuário e envolvidos no projeto,
+Este documento define as estratégias utilizadas para nortear o desenvolvimento do projeto, 
+as necessidades do usuário e envolvidos no projeto,
 		\subsection{Resumo da solução}
-A solução se apresenta sob a forma de uma aplicação que funcionará na intranet do Corpo de Bombeiros Militar do Distrito Federal, e fornecerá subsídios para o correto gerenciamento das viaturas e pessoal relacionado à esse contexto. A aplicação será desenvolvida a partir das necessidades do cliente, sem conexão com um sistema legado.
+A solução se apresenta sob a forma de uma aplicação que funcionará na intranet do Corpo de Bombeiros Militar 
+do Distrito Federal, e fornecerá subsídios para o correto gerenciamento das viaturas e pessoal relacionado à esse contexto. 
+A aplicação será desenvolvida a partir das necessidades do cliente, sem conexão com um sistema legado.
 	\section{Descrição do Usuário}
 		\subsection{Ambiente de Usuário}
 Os usuários são funcionários do Corpo de Bombeiros Militar do Distrito Federal e utilizarão o sistema nas Unidades.
 		\subsection{Principais necessidades do Usuário}
-Para o usuário é primordial organizar e automatizar a gestão de viaturas e motoristas, desde o Departamento de Gestão Veicular até o controle de viaturas e motoristas nas unidades.
+Para o usuário é primordial organizar e automatizar a gestão de viaturas e motoristas, 
+desde o Departamento de Gestão Veicular até o controle de viaturas e motoristas nas unidades.
 	\section{\textit{Stakeholders}}
-Os envolvidos no projeto seja no desenvolvimento, na aquisição ou no uso da aplicação final são stakeholders. No contexto de desenvolvimento do sistema de gestão de viaturas do CBM-DF temos os seguintes \textit{stakeholders}:
+Os envolvidos no projeto seja no desenvolvimento, na aquisição ou no uso da aplicação final são stakeholders. 
+No contexto de desenvolvimento do sistema de gestão de viaturas do CBM-DF temos os seguintes \textit{stakeholders}:
 \begin{itemize}
  \item Equipe de desenvolvimento;
  \item Bombeiros do CBM-DF;
@@ -40,23 +45,40 @@ Os envolvidos no projeto seja no desenvolvimento, na aquisição ou no uso da ap
 	\section{Resumo do Produto}
 Nesta seção serão definidas características do produto.
 		\subsection{Perspectiva do Produto}
-Espera-se do produto que melhore a gestão de viaturas e motoristas no CBM-DF, facilitando consultas, relatórios, verificações e utilização.
+Espera-se do produto que melhore a gestão de viaturas e motoristas no CBM-DF, facilitando consultas, 
+relatórios, verificações e utilização.
 		\subsection{Intenção do Produto}
-O sistema de gerenciamento automatizará as atividades que hoje são feitas à mão e são arquivadas sob forma de planilhas eletrônicas. Os usuários do DGV e Unidades utilizarão o sistema afim de automatizar suas atividades.
+O sistema de gerenciamento automatizará as atividades que hoje são feitas à mão e são arquivadas sob forma de 
+planilhas eletrônicas. Os usuários do DGV e Unidades utilizarão o sistema afim de automatizar suas atividades.
 		\subsection{Resumo das Capacidades}
-O sistema de Gerenciamento de Viaturas e Motoristas do CBM-DF permitirá o gerenciamento de viaturas, criando viaturas nos sistemas, alocando viaturas às unidades e modificando os estados das viaturas. Também serão gerenciados os motoristas, adicionando os mesmo no sistema, modificando dados do motorista, alocando motoristas em escalas e em viaturas.
+O sistema de Gerenciamento de Viaturas e Motoristas do CBM-DF permitirá o gerenciamento de viaturas, 
+criando viaturas nos sistemas, alocando viaturas às unidades e modificando os estados das viaturas. 
+Também serão gerenciados os motoristas, adicionando os mesmo no sistema, modificando dados do motorista, 
+alocando motoristas em escalas e em viaturas.
 	\section{Funcionalidades do Produto}
-As funcionalidades são um conjunto de características e comportamentos que o sistema deve conter para resolver o problema e as necessidades do cliente.
-		\subsection{\textit{Feature} 1: Gerenciamento das missões das unidades}
-Esta funcionalidade compreenderá comportamentos que permitirão ao usuário fazer gerenciamento de missões atribuindo viaturas a elas e gerar relatórios do trabalho registrado no sistema.
-		\subsection{\textit{Feature} 2: Gerenciamento dos dados de abastecimento das viaturas}
-Esta funcionalidade facilitará o gerenciamento dos abastecimentos, visto que o usuário, propriamente dotado de autorização, poderá inserir dados de um abastecimento juntamente com o recibo do próprio. Além disso a funcionalidade garante a geração de relatórios dos dados aqui contidos.
-		\subsection{\textit{Feature} 3: Gerenciamento dos motoristas das unidades}
-Esta funcionalidade será empregada tanto para o DGV quanto para as Unidades, com a finalidade de gerenciar o motorista desde o cadastro do próprio no sistema quanto na alocação em uma escala e missões, além de compreender a geração de relatórios desse assunto.
-		\subsection{\textit{Feature} 4: Gerenciamento das viaturas do CBM-DF}
-Esta funcionalidade compreende as necessidades do usuário de gerenciar viaturas desde o cadastro e alocação, até o desígnio para as missões. Aterações de estado e geração de relatórios deste assunto estão aqui contidos.
+As funcionalidades são um conjunto de características e comportamentos que o sistema deve conter para resolver 
+o problema e as necessidades do cliente.
+		\subsection{\textit{Feature} 1: Gerenciamento das missões de unidade}
+Esta funcionalidade compreenderá comportamentos que permitirão ao usuário fazer gerenciamento de missões 
+atribuindo viaturas a elas e gerar relatórios do trabalho registrado no sistema.
+		\subsection{\textit{Feature} 2: Gerenciamento dos dados dos abastecimentos das viaturas}
+Esta funcionalidade facilitará o gerenciamento dos abastecimentos, visto que o usuário, propriamente dotado de autorização, 
+poderá inserir dados de um abastecimento juntamente com o recibo do próprio. Além disso a funcionalidade garante a 
+geração de relatórios dos dados aqui contidos.
+		\subsection{\textit{Feature} 3: Consulta das viaturas das unidades por dispositivo móvel}
+Esta funcionalidade facillitará a consulta de viaturas disponíveis nas unidades e a pesquisa das unidades no mapa. Além disso, 
+os dados previamente descritos estarão disponíveis enquanto o dispositivo móvel não estiver conectado à internet.
+		\subsection{\textit{Feature} 4: Gerenciamento dos motoristas da unidade}
+Esta funcionalidade será empregada tanto para o DGV quanto para as Unidades, com a finalidade de gerenciar o 
+motorista desde o cadastro do próprio no sistema quanto na alocação em uma escala e missões, 
+além de compreender a geração de relatórios desse assunto.
+		\subsection{\textit{Feature} 5: Gerenciamento das viaturas da unidade}
+Esta funcionalidade compreende as necessidades do usuário de gerenciar viaturas desde o cadastro e alocação, 
+até o desígnio para as missões. Aterações de estado e geração de relatórios deste assunto estão aqui contidos.
+
 	\section{Requisitos não-funcionais}		
-Requisitos não-funcionais são regras que não necessariamente são funcionalidades do sistema, mas o sistema deve estar em conformidade com 
+Requisitos não-funcionais são regras que, mesmo não sendo funcionalidades, o sistema deve estar de acordo. Para o contexto do 
+sistema de gerenciamento de viaturas os seguintes requisitos não-funcionais foram identificados:
 \begin{itemize}
  \item O sistema deve ficar online 24/7;
  \item O sistema deve estar disponível na Intranet do CBMDF;
