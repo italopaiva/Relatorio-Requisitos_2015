@@ -1,0 +1,103 @@
+
+  \section{Caso de Uso F4UC6 - Consultar motorista}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+    Este caso de uso permite que o Consultor Administrativo consulte motorista(s) da corporação do Corpo de Bombeiros do Distrito
+    Federal (CBMDF) para ter acesso as informações do(s) mesmo(s). 
+
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+    Consultor Administrativo. O Consultor Administrativo representa o Gestor Administrativo (Tenentes e Capitães), além dos Majores
+    e Coronéis da corporação dos Corpo de Bombeiros do Distrito Federal (CBMDF).
+
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Consultor Administrativo escolhe a opção de consultar  motorista(s).
+  
+  \begin{enumerate}
+    \item O sistema solicita ao Consultor Administrativo que informe os dados pelos quais deseja-se consultar o(s) motorista(s).
+    \item O Consultor Administrativo  informa os dados do motorista pelos quais deseja fazer a pesquisa e solicita a consulta.[RN01][FE01]
+    \item O sistema apresenta os dados do motorista solicitado.[RN02][FE02]
+    \item O caso de uso é encerrado.
+
+  \end{enumerate}
+  
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} –  Parâmetros de pesquisa
+   
+    A Tabela a seguir apresenta os parâmetros para pesquisa de motorista(s).
+    
+    \begin{table*}[!h]
+    \centering
+      \begin{tabular}{|p{0.20\linewidth}|p{0.25\linewidth}|p{0.20\linewidth}|p{0.20\linewidth}|}
+      \hline
+      Campo  & Formato & Valores & Obrigatoriedade*\\
+      \hline
+
+     Unidade de Alocação ** & AAA000 & - & -\\ \hline
+      
+      Nome do Motorista & - & - & -\\\hline
+      
+      Matrícula motorista & 000000/0 & - & -\\\hline
+      
+      Categoria da CNH & - & A, B, C, D e E & -\\\hline
+      
+      \hline
+      \end{tabular}
+    \end{table*}
+    
+    
+     \begin{center} 
+      *Pelo menos um dos parâmetros deve ser preenchido.
+      
+    
+      ** Apenas o Majores e Coroneis poderam pesquisar por unidade.
+    \end{center}
+      
+    \vfill
+    \pagebreak
+    
+    \textbf{RN02} –  Restrição de visualização
+    
+      O sistema apresenta apenas os motoristas da unidade da corporação do Gestor Administrativo. No caso do solicitante ser um
+      Major ou Coronel, o sistema pode apresentar todos os motoristas do Corpo de Bombeiros do Distrito Ferderal (CBMDF).
+    
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+	
+    FE01. Validação de dados
+	No passo 2 do fluxo principal, é verificado pelo sistema que um ou mais campos não foram validados (no formato e/ou 
+	obrigatoriedade de preenchimento). O sistema exibe uma mensagem informando o ocorrido ao Consultor Administrativo e
+	retorna ao passo 1 do fluxo principal.
+
+
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Consultor Administrativo deve estar corretamente autenticado no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+   
+   \vfill
+   \pagebreak

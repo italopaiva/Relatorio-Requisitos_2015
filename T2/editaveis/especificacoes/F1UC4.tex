@@ -1,0 +1,81 @@
+
+  \section{Caso de Uso F1UC4 - Gerenciar vínculo entre viaturas e missão}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+    Este caso de uso permite a um Sargento de uma unidade vincular uma viatura a uma missão e desvincular uma viatura de uma
+    missão para poder manter o registro das viaturas que foram utilizadas nas diferentes missões.
+
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+     Sargento, patente responsável pela associação das viaturas às missões, nas unidades.
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Sargento escolhe a opção que permite gerenciar vínculos entre viaturas e missões.
+    
+  
+  \begin{enumerate}
+    \item O Sargento seleciona uma missão.
+    \item O Sargento seleciona a opção que permite vincular viaturas à missão.[FA01]
+    \item O sistema exibe as viaturas da unidade que estão disponíveis para a missão.[FE01]
+    \item O Sargento vincula a viatura desejada para a missão.
+    \item O sistema associa a viatura selecionada à missão.
+    \item O sistema apresenta uma mensagem de confirmação da vinculação da viatura à missão.
+    \item O caso de uso é encerrado.
+  \end{enumerate}
+  
+  {\raggedright
+      \textbf{Fluxo Alternativo}
+  }
+  
+    \textbf{FA01} - Desvincular viaturas da missão
+
+  
+    No passo 2 do fluxo principal, esse fluxo alternativo é iniciado quando o Sargento seleciona uma viatura que está associada à
+    uma missão e seleciona a opção que permite desvincular a viatura da missão.
+  
+    \begin{enumerate}
+      \item O Sargento seleciona uma viatura associada à missão.
+      \item O Sargento desvincula a viatura da missão.	
+      \item O sistema desassocia a viatura da missão e muda o status da viatura para “disponível”.
+      \item O sistema informa uma mensagem confirmando que a viatura foi desvinculada da missão.
+      \item O fluxo alternativo é encerrado.
+      
+    \end{enumerate}
+  
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   Nenhuma regra de negócio associada.
+    
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+   
+   Nenhum fluxo de exceção associado.
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Sargento deve estar corretamente autenticado no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+
+  \vfill
+  \pagebreak

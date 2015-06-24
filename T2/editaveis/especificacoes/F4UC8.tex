@@ -1,0 +1,86 @@
+
+  \section{Caso de Uso F4UC8 - Inativar motorista}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+    Este caso de uso permite que o Gestor Administrativo inative  um motorista cadastrado na corporação do Corpo de Bombeiros do
+    Distrito Federal (CBMDF). Um motorista nunca poderá ter seu registro excluído. O mesmo apenas terá seu status alterado e será
+    inativado.
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+    Gestor Administrativo. O Gestor Administrativo representa os Tenentes e Capitães da corporação dos Corpo de Bombeiros do
+    Distrito Federal (CBMDF).
+
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Gestor Administrativo escolhe a opção de Inativar um motorista.
+  
+  \begin{enumerate}
+    \item O sistema solicita ao Gestor Administrativo que informe o motorista que deseja-se inativar.
+    \item O Gestor Administrativo  informa os dados do motorista pelos quais deseja fazer a pesquisa e solicita a consulta.[PE01]
+    \item O sistema apresenta os dados do motorista solicitado.[FE01]
+    \item O Gestor Administrativo solicita a inativação.
+    \item O sistema exibe uma mensagem de alerta ao Gestor Administrativo perguntando se, realmente, o mesmo deseja inativar o
+    motorista solicitado.
+    \item O Gestor Administrativo confirma a inativação do motorista.
+    \item O sistema inativa o motorista.[RN01]
+    \item O sistema apresenta uma mensagem de confirmação da inativação.
+    \item O caso de uso é encerrado.
+
+  \end{enumerate}
+  
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} – Inativação do motorista
+   
+    O Registro do motorista tem seu status alterado para “Inativo”.
+    
+    \vfill
+    \pagebreak
+    
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+	
+    FE01. Motorista não encontrado
+	No passo 3 do fluxo principal, o sistema não encontra o motorista informado pelo Gestor Administrativo. O sistema exibe uma
+	mensagem de erro ao Gestor Administrativo e retorna ao passo 2 do fluxo principal.
+
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Gestor Administrativo deve estar corretamente autenticado no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+
+
+   {\raggedright
+      \textbf{Ponto de Extensão}
+   }
+   
+   
+    PE01. Incluir o caso de uso: Consultar motorista.
+	    No passo 2 do fluxo principal, o caso de uso Consultar motorista deve ser executado.
+   
+
+
+  \vfill
+  \pagebreak
