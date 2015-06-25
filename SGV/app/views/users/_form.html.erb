@@ -12,20 +12,20 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name_user %><br>
-    <%= f.text_field :name_user %>
+    <%= f.label :user_name %><br>
+    <%= f.text_field :user_name %>
   </div>
   <div class="field">
-    <%= f.label :login_user %><br>
-    <%= f.text_field :login_user %>
+    <%= f.label :user_login %><br>
+    <%= f.text_field :user_login %>
   </div>
   <div class="field">
-    <%= f.label :password_user %><br>
-    <%= f.text_field :password_user %>
+    <%= f.label :user_password %><br>
+    <%= f.password_field :user_password %>
   </div>
   <div class="field">
-    <%= f.label :email_user %><br>
-    <%= f.text_field :email_user %>
+    <%= f.label :user_patent %><br>
+    <%= f.select :user_patent, Patent::PATENTS %>
   </div>
   <div class="actions">
     <%= f.submit %>

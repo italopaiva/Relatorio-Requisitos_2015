@@ -16,10 +16,9 @@
   <tbody>
     <% @users.each do |user| %>
       <tr>
-        <td><%= user.name_user %></td>
-        <td><%= user.login_user %></td>
-        <td><%= user.password_user %></td>
-        <td><%= user.email_user %></td>
+        <td><%= user.user_name %></td>
+        <td><%= user.user_login %></td>
+        <td><%= user.user_password %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,6 +26,8 @@
     <% end %>
   </tbody>
 </table>
+
+<div class="callout callout-info"><h4>TESTEEE</h4></div>
 
 <br>
 
