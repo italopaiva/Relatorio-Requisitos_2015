@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'driver_home' => 'drivers#index'
 
+  post 'create_driver' => 'drivers#create'
+  
   resources :drivers
 
   # The priority is based upon order of creation: first created -> highest priority.

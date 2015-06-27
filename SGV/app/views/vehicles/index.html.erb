@@ -1,32 +1,56 @@
 <p id="notice"><%= notice %></p>
 
-<center><h1>Lista de Viaturas</h1></center>
-
-<div class="container">        
-  <table class="table">
+<center>
+<div class="box" style="width:60%;">
+  <div class="box-header">
+    <h3 class="box-title">Viaturas cadastradas</h3>
+    <div class="box-tools">
+      <div class="input-group" style="width:150px;">
+        <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Procurar">
+        <div class="input-group-btn">
+          <button class="btn btn-sm btn-default"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="box-body table-responsive no-padding">
+  <table class="table table-hover">
     <thead>
       <tr>
-        <th>Número do veículo</th>
-        <th>Marca</th>
-        <th>Modelo</th>
-        <th>Status</th>
+        <th class="text-center">Número do veículo</th>
+        <th class="text-center">Marca</th>
+        <th class="text-center">Modelo</th>
+        <th class="text-center">Status</th>
       </tr>
     </thead>
     <tbody>
-      <% @vehicles.each do |v| %>
-        <tr>
-          <td><a><%= link_to v.vehicle_number,  '/vehicles/'+v.id.to_s %></a></td>
-          <td><%= v.brand %></td>
-          <td><%= v.model %></td>
-          <td><%= v.status %></td>
-        </tr>
+      <% if !@vehicles.blank? %>
+        <% @vehicles.each do |v| %>
+          <tr>
+            <td><a><%= link_to v.vehicle_number,  '/vehicles/'+v.id.to_s %></a></td>
+            <td><%= v.brand %></td>
+            <td><%= v.model %></td>
+            <td><%= v.status %></td>
+          </tr>
+        <% end %>
+      <% else %>
+          <tr>
+            <td colspan="4">
+              <div class="callout callout-info">
+                <h4>Nenhuma viatura cadastrada.</h4>
+              </div>
+            </td>
+          </tr>
       <% end %>
     </tbody>
   </table>
+  </div>
 </div>
 
-<br>
 
-<center><%= link_to 'Casdastrar Viatura', new_vehicle_path, class: "btn btn-large btn-primary"%>
+<br>
+<%= link_to 'Cadastrar Viatura', new_vehicle_path, class: "btn btn-large btn-primary"%>
 </center>
+
 
