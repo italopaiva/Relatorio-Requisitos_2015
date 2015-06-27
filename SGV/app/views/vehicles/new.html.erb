@@ -10,7 +10,10 @@
 
 	<%= form_for(@vehicle) do |f| %>
 		<%= render 'create_fields', f: f %>
-		<%= f.submit "Inserir viatura", class: "btn btn-large btn-primary",  data: { confirm: 'Deseja cadastrar a viatura com os dados informados?' } %>
+
+        <div class="row">
+		<%= f.submit "Inserir viatura", class: "btn btn-primary btn-block btn-flat",  data: { confirm: 'Deseja cadastrar a viatura com os dados informados?' } %>
+		</div>
 	<% end %>
 
   </div><!-- /.form-box -->

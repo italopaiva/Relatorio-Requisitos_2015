@@ -1,9 +1,15 @@
+	</div>	
 	<div class="form-group has-feedback">
 	<%= f.label :vehicle_number, "Número da viatura" %>
 	<%= f.text_field :vehicle_number,
 					 :class => 'form-control',
                      :placeholder => 'Número da viatura',
                      :required => true %>
+	</div>
+	
+	<div class="form-group has-feedback">
+	<%= f.label :vehicle_type, "Tipo da viatura" %>
+	<%= f.select :vehicle_type, options_for_select([["Caminhão", 1], ["Carro", 2], ["Motocicleta", 3], ["Barco", 4], ["Jetski", 5], ["Helicóptero", 6]]), :class => "form-control", :required => true %>
 	</div>
 
 	<div class="form-group has-feedback">
@@ -41,5 +47,4 @@
 	<div class="form-group has-feedback">
 	<%= f.label :status, "Status" %>
 	<%= f.select :status, options_for_select([["Ativa", "Ativa"], ["Em manutenção", "Em manutenção"], ["Desativada", "Desativada"]]), :class => "form-control" %>
-	</div>
 
