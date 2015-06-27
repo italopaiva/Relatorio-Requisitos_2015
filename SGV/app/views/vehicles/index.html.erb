@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<center><h1>Lista de Viaturas</h1></center>
+
+<div class="container">        
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Número do veículo</th>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @vehicles.each do |v| %>
+        <tr>
+          <td><a><%= link_to v.vehicle_number,  '/vehicles/'+v.id.to_s %></a></td>
+          <td><%= v.brand %></td>
+          <td><%= v.model %></td>
+          <td><%= v.status %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+
+<center><%= link_to 'Casdastrar Viatura', new_vehicle_path, class: "btn btn-large btn-primary"%>
+</center>
+

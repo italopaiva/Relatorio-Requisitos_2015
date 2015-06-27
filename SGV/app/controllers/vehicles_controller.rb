@@ -19,7 +19,7 @@ class VehiclesController < ApplicationController
   def create
     vehicle = Vehicle.new(vehicle_params)
     if vehicle.save
-      redirect_to '/vehicles/'+vehicle.id.to_s
+      redirect_to '/vehicles/'
     else
       render 'new'
     end
