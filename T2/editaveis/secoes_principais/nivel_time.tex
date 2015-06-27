@@ -11,29 +11,120 @@
   
   \section{Reuniões realizadas}
   
+    A nível de Time, foram realizadas duas reuniões com o cliente.
+    
+    Na útima reunião a nível de programa foi definido o escopo de implementação.
+    Os casos de uso identificados que foram para o escopo de implementação foram priorizados 
+    (seguindo a lógica utilizada para a construção do \textit{Roadmap}) e especificados juntos aos clientes 
+    ao longo das reuniões que ocorreram no nível de Time.
+    
+    Inicialmente, os casos de uso responsáveis por manter os registros de motoristas, viaturas, abastecimentos, missões e escala
+    não estavam decompostos em suas respectivas funcionalidades de cadastro, alteração, consulta e exclusão. A equipe optou por 
+    decompor funcionalmente estes casos de uso porque algumas dessas funcionalidades básicas não podiam ser executadas por qualquer
+    ator do sistema.
+    
+    Esta seção apresenta o resumo das reuniões que ocorreram no nível de Time.
+    
+    \subsection{Resumo da 1ª reunião}
+           
+      Nesta reunião foi utilizada a técnica de entrevista para a especificação dos casos de uso "Cadastrar motorista", 
+      "Alterar motorista", "Consultar motorista", "Inativar motorista", "Cadastrar viatura", "Alterar viatura",
+      "Consultar viatura", "Inativar viatura" e "Gerenciar vínculo entre motorista e viatura", junto ao cliente.
+      
+      A equipe de requisitos planejou a entrevista construindo um possível cenário de caso de uso para a posterior
+      validação do cliente. Tomando este cenário como guia para a entrevista, todas as informações necessárias foram surgindo
+      conforme o rumo da conversa ia mudando.
+            
+    \subsection{Resumo da 2ª reunião}
+      
+      Nesta reunião foram validados pontos não respondidos na reunião anterior e também foi feita a especificação dos casos de uso
+      "Cadastrar missão", "Alterar missão", "Consultar missão" e "Gerenciar vínculo entre viaturas e missões".
+      O planejamento da reunião seguiu o modelo da reunião anterior.
+      
   
   \section{Especificação dos Casos de Uso}
  
-  Foram especificados os casos de uso:
-  
-  \begin{itemize}
-    \item Cadastrar missão;
-    \item Alterar missão;
-    \item Consultar missão;
-    \item Gerenciar vínculo entre viaturas e missões
-    \item Cadastrar motorista;
-    \item Alterar motorista;
-    \item Consultar motorista;
-    \item Inativar motorista;
-    \item Gerenciar vínculo entre motoristas e viaturas;
-    \item Cadastrar viatura;
-    \item Alterar viatura;
-    \item Consultar viatura;
-    \item Inativar viatura.
-  \end{itemize}
+    Foram especificados os casos de uso definidos para o escopo de implementação:
+    
+    \begin{itemize}
+      \item Cadastrar missão;
+      \item Alterar missão;
+      \item Consultar missão;
+      \item Gerenciar vínculo entre viaturas e missões
+      \item Cadastrar motorista;
+      \item Alterar motorista;
+      \item Consultar motorista;
+      \item Inativar motorista;
+      \item Gerenciar vínculo entre motoristas e viaturas;
+      \item Cadastrar viatura;
+      \item Alterar viatura;
+      \item Consultar viatura;
+      \item Inativar viatura.
+    \end{itemize}
 
+    As especificações dos casos de usos se encontram no Apêndice \ref{Especificacao}.
   
-  Os mesmos se encontram no Apêndice \ref{Especificacao}
+  \section{Modelagem dos casos de uso}
+    
+    Essa seção apresenta a modelagem dos casos de uso realizados pela equipe de requisitos.
+    
+    \subsection{Diagrama de atores}
+    
+      Foi necessária uma generalização dos atores do sistema para melhor representar a interação destes com o sistema. As generalizações
+      feitas está representada no diagrama de atores ilustrado na figura \ref{diagrama_de_atores}.
+      
+      \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{figuras/diagrama_de_atores}
+	\caption[Diagrama de atores]{Diagrama de atores.}
+	\label{diagrama_de_atores}
+      \end{figure}
+    
+    \vfill
+    \pagebreak
+    \subsection{Diagrama de casos de uso}
+      
+      A figura \ref{diagrama_de_casos_uso} ilustra o diagrama de casos de uso modelado para o sistema.
+      
+      \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.85]{figuras/diagrama_de_casos_uso}
+	\caption[Diagrama de casos de uso para o sistema]{Diagrama de casos de uso para o sistema.}
+	\label{diagrama_de_casos_uso}
+      \end{figure}
+    
+    \subsection{Diagrama de casos de uso para o sistema \textit{mobile}}
+      
+      A figura \ref{caso_de_uso_mobile} ilustra, a parte, o diagrama de casos de uso modelado para o sistema \textit{mobile}.
+      
+      \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{figuras/caso_de_uso_mobile}
+	\caption[Diagrama de casos de uso para o sistema \textit{mobile}]{Diagrama de casos de uso para o sistema \textit{mobile}.}
+	\label{caso_de_uso_mobile}
+      \end{figure}
+    
+  \section{\textit{Sprints}}
+    
+    Esta seção apresenta os resultados da execução das \textit{sprints}.
+    
+    \subsection{Planejamento da \textit{Sprint 1}}
+      
+	Essa seção apresenta o planejamento feito para a \textit{sprint} 1.
+      
+      \subsubsection{\textit{Backlog} da \textit{Sprint}}
+	
+	Os seguintes casos de comporão o \textit{Backlog da sprint}:
+	
+	\begin{itemize}
+	 \item Cadastrar motorista;
+	 \item Alterar motorista;
+	 \item Consultar motorista;
+	 \item Cadastrar viatura;
+	 \item Alterar viatura;
+	 \item Consultar viatura;
+	 \item Gerenciar vínculo entre motoristas e viaturas;
+	\end{itemize}
   
   \section{Considerações finais a nível de Time}
     

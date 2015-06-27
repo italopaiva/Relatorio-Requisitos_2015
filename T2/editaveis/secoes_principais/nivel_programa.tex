@@ -45,7 +45,37 @@
       mesma relevância), conceitualmente, a reunião desceu para o nível de Programa com a realização dos \textit{brainstorms},
       realizando as atividades de "Levantar as \textit{features}" e "Identificar os requisitos não-funcionais" do nível de programa.
       
-      Com os pontos discutidos nessa reunião, ainda foi possível levantar alguns requisitos funcionais do sistema.
+      Com o desenrolar da reunião, ainda foi possível levantar grande parte dos requisitos funcionais do sistema, embora este não tenha
+      sido o objetivo inicial da reunião.
+      
+    \subsection{Resumo da 2ª reunião}
+    
+      Com as \textit{features} e os requisitos funcionais que foram identificados na reunião anterior, a equipe de requisitos 
+      agrupou todas as ideias que já haviam sido levantadas e criou um mapa de conceitos (ilustrado na figura \ref{mapa_conceitos})
+      para organizar os conceitos envolvidos no contexto e para identificar possíveis requisitos funcionais nas relações entre os 
+      conceitos.
+            
+      \begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.4]{figuras/mapa_conceitos}
+	\caption[Mapa de conceitos para o contexto do sistema de gestão de viaturas]
+	  {Mapa de conceitos para o contexto do sistema de gestão de viaturas.}
+	\label{mapa_conceitos}
+      \end{figure}
+      
+      Os requisitos funcionais identificados foram agrupados em casos de uso.
+      O mapa de conceitos criado, juntamente com os requisitos identificados até o momento foi levado para o cliente para a
+      validação do que foi produzido pela equipe.
+      
+      \subsubsection{Definição do escopo de implementação}
+      
+	Com a validação das \textit{features} definidas pela equipe ficou estabelecida a visão do projeto entre os
+	\textit{stakeholders}. Com a visão estabelecida foi iniciada a construção do Documento de Visão e definido o
+	escopo de implementação.
+		
+	Nessa reunião foi feita a validação inicial da priorização das \textit{features} no \textit{Roadmap} com o cliente. 
+	Em conversa com o cliente, o \textit{Roadmap} precisaria apenas de algumas correções necessárias.
+	
   
   \section{Considerações finais a nível de Programa}
     
@@ -59,29 +89,32 @@
        \item \textit{Feature} 1 (E1F1) - Gerenciamento das missões de unidade;
        \item \textit{Feature} 2 (E1F2) - Gerenciamento dos dados dos abastecimentos das viaturas;
        \item \textit{Feature} 3 (E1F3) - Consulta das viaturas das unidades por dispositivo móvel. 
-       \item \textit{Feature} 4 (E2F1) - Gerenciamento dos motoristas da unidade;
-       \item \textit{Feature} 5 (E2F2) - Gerenciamento das viaturas da unidade;
+       \item \textit{Feature} 4 (E2F4) - Gerenciamento dos motoristas da unidade;
+       \item \textit{Feature} 5 (E2F5) - Gerenciamento das viaturas da unidade;
       \end{itemize}
       
       As \textit{features} estão descritas mais detalhadamente no documento de visão (apêndice \ref{doc_visao}).
               
     \subsection{Requisitos Não-funcionais}
     
-          Introdução aos RNFs (Pegar do SAFe, por exemplo).
+          Os Requisitos não-funcionais consistem em restrições que o \textit{software} deve estar em conformidade ou qualidades específicas
+          que o a solução deve ter. \cite{leffingwell14}
       
-	  Para o levantamento dos ... foram analisados os conceitos do FURPS+ para a criação das perguntas que permitirião abstrair 
-	  os requisitos não-funcionais do sistema com o cliente.
+	  Para o levantamento dos requisitos não-funcionais foram analisados os conceitos do FURPS+ para a criação das perguntas que permitiram abstraí-los 
+	  a partir de reuniões com o cliente.
 	  
-	  Os requisitos não-funcionais que foram levantados e validados com o cliente se encontram no
-	  documento de visão (apêncice \ref{doc_visao}).
-      
-    \subsection{\textit{Roadmap}}
-      
-      
-    \subsection{Visão}
-      
+	  Os requisitos não-funcionais que foram levantados e validados com o cliente se encontram no Documento
+	  de Visão (apêndice \ref{doc_visao}).
       
     \subsection{\textit{Roadmap}}
     
       \input{editaveis/roadmap}
+    
+    \subsection{Visão}
+    
+      O conteúdo primário da Visão de um sistema é o conjunto de features priorizadas que descrevem o que o sistema será capaz de oferecer 
+      a seus usuários, para atender as necessidades dos envolvidos. \cite{leffingwell11}
       
+      A visão do sistema acordada entre os \textit{stakeholders} encontra-se no documento de visão no apêndice \ref{doc_visao}
+      
+      \vfill

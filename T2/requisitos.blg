@@ -13,6 +13,8 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
+Warning--entry type for "Leffingwell14" isn't style-file defined
+--line 113 of file bibliografia.bib
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -22,44 +24,45 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://abntex2.googlecode.com                           |
 +---------------------------------------------------------+
-You've used 1 entry,
+You've used 3 entries,
             6711 wiz_defined-function locations,
-            1197 strings with 9336 characters,
-and the built_in function-call counts, 891 in all, are:
-= -- 192
-> -- 0
-< -- 0
-+ -- 46
-- -- 0
-* -- 36
-:= -- 175
-add.period$ -- 0
-call.type$ -- 1
-change.case$ -- 3
-chr.to.int$ -- 1
-cite$ -- 0
-duplicate$ -- 3
-empty$ -- 40
-format.name$ -- 0
-if$ -- 204
+            1207 strings with 9625 characters,
+and the built_in function-call counts, 2119 in all, are:
+= -- 279
+> -- 31
+< -- 1
++ -- 56
+- -- 10
+* -- 109
+:= -- 347
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 6
+cite$ -- 2
+duplicate$ -- 71
+empty$ -- 159
+format.name$ -- 46
+if$ -- 500
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 10
-newline$ -- 8
-num.names$ -- 0
-pop$ -- 28
+missing$ -- 47
+newline$ -- 17
+num.names$ -- 10
+pop$ -- 74
 preamble$ -- 1
-purify$ -- 3
+purify$ -- 9
 quote$ -- 0
-skip$ -- 80
+skip$ -- 149
 stack$ -- 1
-substring$ -- 49
-swap$ -- 0
+substring$ -- 86
+swap$ -- 29
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 2
+while$ -- 14
 width$ -- 0
-write$ -- 8
+write$ -- 37
+(There was 1 warning)

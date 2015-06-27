@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name user</th>
+      <th>Login user</th>
+      <th>Password user</th>
+      <th>Email user</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.user_name %></td>
+        <td><%= user.user_login %></td>
+        <td><%= user.user_password %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="callout callout-info"><h4>TESTEEE</h4></div>
+
+<br>
+
+<%= link_to 'New User', new_user_path %>

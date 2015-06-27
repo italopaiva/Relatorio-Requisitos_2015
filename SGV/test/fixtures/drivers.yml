@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  driver_id: 
+  driver_license: MyString
+  has_course: 
+  course_year: 
+  license_expiration: MyString
+
+two:
+  driver_id: 
+  driver_license: MyString
+  has_course: 
+  course_year: 
+  license_expiration: MyString

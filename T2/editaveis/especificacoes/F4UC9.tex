@@ -1,0 +1,95 @@
+
+  \section{Caso de Uso F4UC9 - Gerenciar vínculo entre motoristas e viaturas}
+
+  {\raggedright
+      \textbf{Descrição}
+  }
+
+   Este caso de uso permite a um Gestor Administrativo ou a um Sargento de uma unidade, vincular um motorista à uma viatura e
+   desvincular um motorista de uma viatura da unidade para poder deixar pré-associado a uma viatura seus respectivos motoristas.
+
+    
+  {\raggedright
+      \textbf{Ator Principal}
+  }
+
+     Gestor administrativo. O Gestor administrativo representa os tenentes e capitães alocados em uma unidade do Corpo de Bombeiros Militar do Distrito Federal (CBMDF).
+
+  {\raggedright
+      \textbf{Fluxo Principal}
+  }
+  
+    Este caso de uso é iniciado quando o Gestor administrativo escolhe a opção que permite gerenciar vínculos entre motorista e viaturas.
+    
+  
+  \begin{enumerate}
+    \item O sistema exibe as viaturas da unidade.
+    \item O Gestor administrativo seleciona uma viatura.
+    \item Se houver motoristas associados à viatura, o sistema exibe-os ao Gestor administrativo.[FA01]
+    \item O Gestor administrativo seleciona a opção que permite vincular motoristas a viatura.
+    \item O sistema exibe os motoristas da unidade que estão aptos para serem vinculados à viatura selecionada pelo Gestor administrativo.[RN01][RN02][FE01]
+    \item O Gestor administrativo vincula o motorista desejado à viatura.
+    \item O sistema apresenta uma mensagem de confirmação da vinculação do motorista à viatura.
+    \item O caso de uso é encerrado.
+  \end{enumerate}
+  
+  {\raggedright
+      \textbf{Fluxo Alternativo}
+  }
+  
+    \textbf{FA01} - Desvincular motoristas da viatura
+  
+    No passo 3 do fluxo principal, esse fluxo alternativo é iniciado quando o Gestor administrativo seleciona um motorista que está
+    associado à viatura e seleciona a opção que permite desvincular um motorista da viatura.
+
+    \begin{enumerate}
+      \item O Gestor administrativo seleciona um motorista associado à viatura.
+      \item O Gestor administrativo desvincula o motorista da viatura.	
+      \item O sistema desassocia o motorista da viatura.
+      \item O sistema informa uma mensagem confirmando que o motorista foi desvinculado da viatura.
+      \item O fluxo alternativo é encerrado.
+      
+    \end{enumerate}
+  
+  
+   {\raggedright
+      \textbf{Regras de Negócio}
+   }
+   
+   \textbf{RN01} - Os motoristas devem cumprir os seguintes requisitos para poderem dirigir um tipo de viatura:
+   
+    \begin{itemize}
+     \item Possuir habilitação para o tipo de viatura.
+     \item Possuir o curso específico para o tipo de viatura.
+    \end{itemize}
+
+   \textbf{RN02} - Um motorista só pode ser vinculado a uma viatura
+   
+    Um motorista que já está vinculado a uma viatura não está apto para ser vinculado a outra viatura.
+
+   
+   {\raggedright
+      \textbf{Fluxo de Exceção}
+   }
+   
+    FE01 - Não há motoristas aptos para o tipo de viatura escolhido.
+
+      No passo 3 do fluxo principal, o sistema disponibiliza uma lista dos motoristas aptos para o tipo de viatura selecionada.
+      Caso não haja nenhum motorista apto, o sistema deve informar uma mensagem explicitando o ocorrido. Após a mensagem, o sistema
+      volta ao passo 1 do fluxo principal para permitir a escolha de outra viatura.
+	
+   {\raggedright
+      \textbf{Condições}
+   }
+   
+    
+   \textbf{Pré-condições}
+   
+   O Gestor administrativo devem estar corretamente autenticados no sistema para a execução do caso de uso.
+   
+   \textbf{Pós-condição}
+   
+   A operação realizada no caso de uso deve ser registrada, juntamente com o autor, data e horário da operação, para fins de auditorias futuras.
+
+  \vfill
+  \pagebreak

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SGV</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+	<div class="navbar-header">
+		<%= link_to "SGV", root_path, :class => "navbar-brand" %>
+	</div>
+
+	<ul class="nav navbar-nav navbar-right">
+		<li class="active"><%= link_to "Viaturas", vehicles_path %></li>
+		<li class="active"><%= link_to "Sair", user_logout_path %></li>
+	</ul>
+</div>
+</nav>
+
+<% if flash[:info] %>
+	<div class="alert alert-info alert-dismissable">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+		<h4 align="center"><i class="icon fa fa-info"></i> <%= flash[:info]%></h4>
+	</div>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>
