@@ -2,9 +2,10 @@ Rails.application.routes.draw do
 
   root :to => "users#login"
 
+  
   resources :users
   resources :vehicles
-
+  resources :drivers
   
   post 'auth_user' => 'users#auth'
 
@@ -14,10 +15,8 @@ Rails.application.routes.draw do
 
   get 'driver_home' => 'drivers#index'
 
-  post 'create_driver' => 'drivers#create'
+  post 'create_driver' => 'drivers#create_driver'
   
-  resources :drivers
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -8,7 +8,13 @@
 
     <p class="login-box-msg">Informe os dados abaixo para cadastrar um motorista.</p>
 
-        <%= form_for @driver, :url => 'create_driver_path' do |f| %>
+      <% if flash[:error] %>
+        <div id="notice" class="callout callout-danger">
+          <h5><%= flash[:error]%></h5>
+        </div>
+      <% end %>
+
+    <%= form_for @driver do |f| %>
     
           <% if flash[:notice] %>
             <div id="notice" class="callout callout-danger">
@@ -30,7 +36,7 @@
             <%= f.text_field :driver_id,
                              :id => 'driver_id',
                              :class => 'form-control',
-                             :placeholder => 'Matrícula do motorista',
+                             :placeholder => 'Matrícula do motorista: 000000/0',
                              :required => true %>
         </div>
         
@@ -45,6 +51,7 @@
                              :id => 'driver_cnh',
                              :class => 'form-control',
                              :placeholder => 'Número da CNH do motorista',
+                             :min => "0",
                              :required => true %>
         </div>
 
@@ -65,7 +72,7 @@
         </div>        
 
         <div class="row">
-            <%= f.submit "Cadastrar", :class => "btn btn-primary btn-block btn-flat" %>
+            <%= f.submit "Cadastrar", :class => "btn btn-primary btn-block btn-flat", data: {confirm: 'Deseja cadastrar o motorista com os dados informados?'} %>
         </div>
 
     <% end %>
