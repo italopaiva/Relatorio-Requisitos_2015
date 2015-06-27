@@ -1,0 +1,8 @@
+<div class="center jumbotron">
+	<h2>Cadastro de Viatura</h2>
+
+	<%= form_for(@vehicle) do |f| %>
+		<%= render 'create_fields', f: f %>
+		<%= f.submit "Inserir viatura", class: "btn btn-large btn-primary" %>
+	<% end %>
+</div>
