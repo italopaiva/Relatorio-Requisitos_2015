@@ -7,6 +7,51 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def login
+    @user = User.new
+  end
+
+  def auth
+    @user = User.new(user_params_login)
+
+    if !@user.user_password.blank? && !@user.user_login.blank?  
+
+      @found_user = User.get_user_by_login @user.user_login
+
+      if(@found_user != nil)
+        
+        if @found_user.user_password == @user.user_password
+
+          session[:current_user_name] = @found_user.user_name
+          flash[:notice] = "Seja bem-vindo, #{session[:current_user_name]}!"
+          redirect_to action: "home";
+
+        else
+          flash[:notice] = "Usuário ou senha incorretos. Informe novamente."
+          redirect_to action: "login"
+        end
+
+      else
+        flash[:notice] = "Usuário não encontrado."
+        redirect_to action: "login"
+      end
+
+    else
+        flash[:notice] = "Informe um login e uma senha para acessar o sistema."
+        redirect_to action: "login"
+    end
+
+  end
+
+  def home
+
+  end
+
+  def logout
+    session[:current_user_name] = nil
+    flash[:info] = "Acesso encerrado com sucesso!"
+    redirect_to action: "login"
+  end
   # GET /users/1
   # GET /users/1.json
   def show
@@ -70,5 +115,9 @@ class UsersController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
       params.require(:user).permit(:user_name, :user_login, :user_password, :user_patent)
+    end
+
+    def user_params_login
+      params.require(:user).permit(:user_login, :user_password)
     end
 end

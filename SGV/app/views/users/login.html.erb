@@ -1,0 +1,40 @@
+<% if session[:current_user_name] %>
+
+  <% controller.redirect_to home_path %>
+
+<% else %>
+
+  <div class="login-box">
+  <div class="login-logo">
+    <b>SGV</b>
+  </div><!-- /.login-logo -->
+  <div class="login-box-body">
+    <p class="login-box-msg">Sistema de Gestão de Viaturas do CBMDF.</p><br>
+    <p class='login-box-msg'>Entre em sua conta para acessar o sistema.</p>
+
+  <%= form_for @user, :url => 'auth_user' do |f| %>
+    
+    <% if flash[:notice] %>
+      <div id="notice" class="callout callout-danger">
+        <h5><%= notice %></h5>
+      </div>
+    <% end %>
+    <div class="form-group has-feedback">
+      <%= f.label :user_login, "Login" %><br>
+      <%= f.text_field :user_login, :id => 'login', :class => 'form-control', :placeholder => 'Login' %>
+    </div>
+    <div class="form-group has-feedback">
+      <%= f.label :user_password, "Senha" %><br>
+      <%= f.password_field :user_password, :id => 'password', :class => 'form-control', :placeholder => 'Senha'%>
+    </div>
+    <div class="row">
+      <%= f.submit "Entrar", :class => "btn btn-primary btn-block btn-flat" %>
+    </div>
+  <% end %>
+
+    <br>
+    <!-- <%= link_to 'Cadastrar usuário', new_user_path %> -->
+
+  </div><!-- /.login-box-body -->
+  </div><!-- /.login-box -->
+<% end %>
