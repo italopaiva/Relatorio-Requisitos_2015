@@ -1,0 +1,74 @@
+<div class="register-box">
+
+  <div class="register-logo">
+        <b>Cadastrar motorista</b>
+  </div>
+
+  <div class="register-box-body">
+
+    <p class="login-box-msg">Informe os dados abaixo para cadastrar um motorista.</p>
+
+        <%= form_for @driver, :url => 'drivers_path' do |f| %>
+    
+          <% if flash[:notice] %>
+            <div id="notice" class="callout callout-danger">
+              <h5><%= notice %></h5>
+            </div>
+          <% end %>
+
+        <div class="form-group has-feedback">
+            <%= f.label :driver_name, "Nome do motorista" %><br>
+            <%= f.text_field :driver_name,
+                             :id => 'driver_name',
+                             :class => 'form-control',
+                             :placeholder => 'Nome do motorista',
+                             :required => true %>
+        </div>
+
+        <div class="form-group has-feedback">
+            <%= f.label :driver_id, "Matrícula do motorista" %><br>
+            <%= f.text_field :driver_id,
+                             :id => 'driver_id',
+                             :class => 'form-control',
+                             :placeholder => 'Matrícula do motorista',
+                             :required => true %>
+        </div>
+        
+        <div class="form-group has-feedback">
+            <%= f.label :driver_patent, "Patente do motorista" %><br>
+            <%= f.select :driver_patent, Patent::PATENTS, :class => "form-control", :required => true %>
+        </div>
+        
+        <div class="form-group has-feedback">
+            <%= f.label :driver_cnh, "CNH do motorista" %><br>
+            <%= f.number_field :driver_cnh,
+                             :id => 'driver_cnh',
+                             :class => 'form-control',
+                             :placeholder => 'Número da CNH do motorista',
+                             :required => true %>
+        </div>
+
+        <div class="form-group has-feedback">
+            <%= f.label :driver_license, "Categoria de habilitação do motorista" %><br>
+            <%= f.select :driver_license,
+                         [['AB', 'AB'], ['A', 'A'], ['B', 'B'], ['C', 'C'], ['D', 'D'], ['E', 'E']],
+                         :required => true %>
+        </div>
+
+        <div class="form-group has-feedback">
+            <%= f.label :license_expiration, "Data de vencimento da CNH do motorista" %><br>
+            <%= f.date_field :license_expiration,
+                             :id => 'license_expiration',
+                             :class => 'form-control',
+                             :placeholder => 'Data de vencimento da CNH',
+                             :required => true %>
+        </div>        
+
+        <div class="row">
+            <%= f.submit "Cadastrar", :class => "btn btn-primary btn-block btn-flat" %>
+        </div>
+
+    <% end %>
+
+  </div><!-- /.form-box -->
+</div>

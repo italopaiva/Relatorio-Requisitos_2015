@@ -9,6 +9,10 @@ Rails.application.routes.draw do
 
   get 'user_logout' => 'users#logout'
 
+  get 'driver_home' => 'drivers#index'
+
+  resources :drivers
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

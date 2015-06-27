@@ -3,5 +3,5 @@ class Patent < ActiveRecord::Base
 	belongs_to :user
 
 	# Patents to the context
-	PATENTS = [['Capitão', 1], ['Sargento', 2], ['Tenente', 3], ['Major', 4], ['Coronel', 5]]
+	PATENTS = [['Capitão', 'Capitão'], ['Sargento', "Sargento"], ['Tenente', "Tenente"], ['Major', "Major"], ['Coronel', "Coronel"]]
 end

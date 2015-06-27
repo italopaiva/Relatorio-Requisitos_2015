@@ -11,28 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150625150233) do
+ActiveRecord::Schema.define(version: 20150627043642) do
 
   create_table "drivers", force: :cascade do |t|
-    t.integer  "driver_id"
+    t.string   "driver_id"
     t.string   "driver_license"
     t.integer  "has_course"
     t.integer  "course_year"
     t.string   "license_expiration"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
-  end
-
-  create_table "drivers_licenses", force: :cascade do |t|
-    t.integer "license_id"
-    t.string  "license_type"
-  end
-
-  create_table "licenses", force: :cascade do |t|
-    t.string   "license_id"
-    t.string   "license_type"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "driver_patent"
+    t.string   "driver_name"
+    t.integer  "driver_cnh"
   end
 
   create_table "patents", force: :cascade do |t|
@@ -52,7 +43,6 @@ ActiveRecord::Schema.define(version: 20150625150233) do
   end
 
   create_table "vehicle_types", force: :cascade do |t|
-    t.integer  "type_id"
     t.string   "type_name"
     t.string   "type_prefix"
     t.string   "fuel_type"
