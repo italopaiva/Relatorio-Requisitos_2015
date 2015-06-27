@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  
+
   root :to => "users#login"
+
   resources :users
+  resources :vehicles
+
   
   post 'auth_user' => 'users#auth'
 
